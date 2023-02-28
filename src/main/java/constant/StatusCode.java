@@ -2,9 +2,9 @@ package constant;
 
 public class StatusCode {
 	
-	public final int ok=200;
-	public final int created=201;
-	public final int nocontent=204;
+	public static final int ok=200;
+	public static final int createds=201;
+	public static final int nocontent=204;
 	
 
 }

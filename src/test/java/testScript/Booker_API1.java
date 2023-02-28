@@ -83,7 +83,7 @@ public class Booker_API1 {
 				.post("/booking");
 		System.out.println("The Status Code is" + resc.statusCode());
 		System.out.println(resc.asPrettyString());
-		Assert.assertEquals(resc.statusCode(), statusCode.created);
+		Assert.assertEquals(resc.statusCode(), statusCode.ok);
 
 	}
 	
@@ -200,7 +200,7 @@ public class Booker_API1 {
 				.headers("Cookie","token="+token)
 				.delete("booking/"+bookingID);
 		System.out.println( res.statusCode());
-		Assert.assertEquals(res.statusCode(), statusCode.created);	
+		Assert.assertEquals(res.statusCode(), statusCode.createds);	
 	}
 	
 	@Test(priority=7)
